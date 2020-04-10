@@ -1,0 +1,62 @@
+//Media
+
+@media (min-width: 700px) {
+    nav {
+       display: grid;
+       grid-template-columns: 1fr 4fr 1fr;
+
+       .search:nth-child(3) {
+           color: white;
+           background: $lightBlack;
+           padding: 0.3rem 0.7rem;
+       }
+    }
+
+   main {
+
+    .video__label {
+        flex-direction: column;
+
+        .video__title {
+            font-size: 2rem;
+        }
+
+       .video__date {
+           font-size: 1.2rem;
+           color: gray;
+       }
+
+       * {
+           margin: 0.4rem;
+       }
+    }
+
+    .video__icons {
+        justify-content: flex-end;
+       
+
+        i {
+            margin: 0 1rem;
+        }
+
+        &::before {
+            content: "";
+            height: 30px;
+            border-bottom: 1px solid lightgray;
+            position: absolute;
+            width: 90%;
+            right: 5%;
+        }
+    }
+
+    .video__uploader {
+        margin: 1rem 0;
+        height: 50px;
+
+        .subscribe {
+            padding: 0.4rem;
+        }
+    }
+
+   }
+}

@@ -1,0 +1,60 @@
+//Nav
+
+nav {
+    background: $black;
+
+    i{
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    img {
+        height: 40px;
+        width: 80px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__menu {
+        i, img {
+            margin: 0.4rem;
+        }
+    }
+
+    .nav__search-bar {
+        justify-content: center;
+
+        .search {
+            color: $black;
+
+            &:hover {
+                cursor: none;
+            }
+        }
+
+        .input-bar {
+            height: 35px;
+            width: 90%;
+            background: $darkBlack;
+            border: 1px solid $lightBlack;
+        }
+    }
+
+    .nav__icons {
+        justify-content: space-evenly;
+
+        i {
+            padding: 0.8rem;
+        }
+    }
+}
